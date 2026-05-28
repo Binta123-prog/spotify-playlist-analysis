@@ -1,8 +1,14 @@
+
+import streamlit as st
+
+st.title("Spotify Playlist Analysis")
+
+st.write("App is working successfully ✅")
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import streamlit as st
+
 
 
 df = pd.read_csv("Atlantic_United_States.csv")
