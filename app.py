@@ -149,7 +149,9 @@ plt.xlabel("Popularity")
 
 plt.ylabel("Frequency")
 
-plt.show()
+fig = plt.figure(figsize=(10,5))
+...
+st.pyplot(fig)
 st.markdown(""" The histogram of popularity scores shows a highly concentrated distribution between popularity scores of 80 and 100, indicating that most songs appearing in the United States Top 50 playlist already possess high popularity levels.The majority of observations cluster toward higher popularity values with relatively fewer low-popularity songs.
 
  """)
@@ -169,7 +171,9 @@ plt.xlabel("Popularity")
 
 plt.ylabel("Playlist Rank")
 
-plt.show()
+fig = plt.figure(figsize=(10,5))
+...
+st.pyplot(fig)
 
 st.markdown(""""  The scatter plot between popularity and playlist rank demonstrates a moderate inverse relationship between the two variables. Songs with higher popularity scores tend to occupy better playlist positions.The observed pattern suggests a negative correlation because lower numerical ranks correspond to better playlist positions.
 """)
@@ -188,8 +192,9 @@ plt.xlabel("Explicit Content")
 
 plt.ylabel("Popularity")
 
-plt.show()
-
+fig = plt.figure(figsize=(10,5))
+...
+st.pyplot(fig)
 st.markdown("""  The boxplot comparison between explicit and non-explicit songs indicates that both categories exhibit highly similar popularity distributions. Median popularity scores are nearly identical, and the interquartile ranges substantially overlap. Both distributions contain several lower-popularity outliers, indicating occasional poor-performing tracks in both content categories. However, there is no strong statistical evidence suggesting that explicit content significantly increases or decreases popularity.
 """)
 
@@ -210,7 +215,9 @@ plt.xlabel("Number of Appearances")
 
 plt.ylabel("Artist")
 
-plt.show()
+fig = plt.figure(figsize=(10,5))
+...
+st.pyplot(fig)
 st.markdown("""
 The artist dominance analysis reveals substantial inequality in playlist representation among artists. Taylor Swift, Zach Bryan, and Morgan Wallen exhibit significantly higher playlist appearances compared to other artists, indicating strong market concentration.The large differences between artists indicate non-uniform representation across the playlist ecosystem.
 
@@ -238,7 +245,9 @@ plt.xlabel("Date")
 
 plt.ylabel("Rank")
 
-plt.show()
+fig = plt.figure(figsize=(10,5))
+...
+st.pyplot(fig)
 
 st.markdown("""
 The time-series plot of playlist rank demonstrates substantial rank fluctuations over time, indicating dynamic playlist movement behavior. The song exhibits both upward and downward rank transitions, suggesting varying listener engagement intensity throughout the observation period.
@@ -277,8 +286,9 @@ sns.heatmap(
 
 plt.title("Correlation Matrix")
 
-plt.show()
-
+fig = plt.figure(figsize=(10,5))
+...
+st.pyplot(fig)
 st.markdown("""
 Position V/S popularity
 A weak negative correlation exists between playlist position and popularity.indicates that, songs with higher popularity scores tend to achieve better playlist ranks but the relationship is relatively wweak.Because playlist ranking is inverse, smaller rank numbers indicate better positions
