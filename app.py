@@ -5,7 +5,7 @@ import seaborn as sns
 
 
 
-df = pd.read_csv("//content/sample_data/Atlantic_United_States.csv")
+df = pd.read_csv("Atlantic_United_States.csv")
 
 # DISPLAY DATA
 
